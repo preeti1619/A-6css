@@ -1,0 +1,74 @@
+body{
+    background-image: url(./sky.jpg);
+}
+.car{
+    position: relative;
+    margin-bottom: 200px;
+}
+.wheel2{
+    position: absolute;
+    margin-left: 828px;
+    margin-top: 360px;
+    animation-name: car;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+.wheel1{
+    position: absolute;
+    margin-left: 590px;
+    margin-top: 360px;
+    animation-name: car;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+
+}
+.car1{
+    position: absolute;
+    margin-left: 550px;
+    margin-top: 250px;
+    
+}
+.flag{
+    position: absolute  ;
+    margin-left: 860px;
+    margin-top: 250px;
+
+}
+.road{
+   width:100%; 
+  position: absolute;
+  margin-top: 299px;
+  animation-name: road1;
+  animation-timing-function: linear;
+  animation-duration: 100s;
+  animation-iteration-count: infinite;
+  
+  
+ 
+}
+.city{
+    position: absolute;
+    margin-top: 100px;
+}
+@keyframes car {
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+    
+}
+@keyframes road1 {
+    from{transform: translate(-8px);  transition-property: all; transition-timing-function: ease-in;-o-transition-duration: 2s;transition-delay: 1s;}
+}
+to{
+    transform: translate(0px); transition: all;transition-duration: 2s; transition-delay: 1s;
+}
+*{
+    margin:0px;
+    padding:0px;
+}
